@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div style="display: flex; flex-wrap: wrap; width: 445px;">
+        <div style=" display:flex;">
+        <input id="result" class="any" type="text" style="width: 304px;">
+        <button onclick="cleared()">c</button>
+        </div>
+       
+        <button onclick="getvalue(1)">1</button>
+        <button onclick="getvalue(2)">2</button>
+        <button  onclick="getvalue(3)">3</button>
+        <button  onclick="getvalue('/')">/</button>
+      
+        <button  onclick="getvalue(4)">4</button>
+        <button  onclick="getvalue(5)">5</button>
+        <button  onclick="getvalue(6)">6</button>
+        <button  onclick="getvalue('*')">*</button>
+        <button  onclick="getvalue(7)">7</button>
+        <button  onclick="getvalue(8)">8</button>
+        <button onclick="getvalue(9)">9</button>
+        <button onclick="getvalue('-')">-</button>
+        <button onclick="getvalue(0)">0</button>
+        <button onclick="getvalue('.')">.</button>
+        <button onclick="getresult('=')">=</button>
+        <button onclick="getvalue('+')">+</button>
+    </div>
+    <script>
+        function getvalue(x){
+            
+            document.getElementById('result').value+=x
+        }
+     //equal
+     function getresult(){
+            let one=document.getElementById('result').value;
+            console.log(one );
+            if(!one){
+                alert("hi")
+            }
+        else{
+            let result=eval(one)
+            document.getElementById('result').value = result;
+
+            }
+           
+            
+        
+            
+
+
+        }
+    function cleared(){
+document.getElementById('result').value=""
+    }
+    </script>
+</body>
+</html>

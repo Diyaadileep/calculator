@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h3 id="c"></h3>
+    <input  id="a" type="number">
+    <input id="b"   type="number">
+    <button onclick="myfunc('add')">add</button>
+    <button onclick="myfunc('mul')">mul</button>
+    <button onclick="myfunc('sub')">sub</button>
+    
+    <button onclick="myfunc('div')">div</button>
+
+
+
+
+
+    <script>
+        // function myfunc(x){
+        // let abcd= parseFloat( document.getElementById('a').value)
+        // console.log(abcd);
+        // let b= parseFloat(document.getElementById('b').value)
+        // console.log(b);
+        // let c
+        // if(x=='add'){
+        //     c=abcd+b;
+        // }
+        // else if(x=='mul'){
+        //     c=abcd*b;
+        // }
+        // else if(x=='sub'){
+        //     c=abcd-b;
+        // }
+        // else{
+        //     c=abcd/b;
+        // }
+
+        
+        // console.log(c);
+        // document.getElementById('c').innerHTML=c
+        // }
+
+
+         function myfunct(){
+        let a= parseFloat( document.getElementById('a').value)
+         console.log(a);
+         let b= parseFloat(document.getElementById('b').value)
+         console.log(b);
+         let c=a*b;
+         console.log(c);
+         document.getElementById('c').innerHTML=c
+         }
+
+
+         function myfuncti(){
+         let a= parseFloat( document.getElementById('a').value)
+         console.log(a);
+         let b= parseFloat(document.getElementById('b').value)
+         console.log(b);
+         let c=a-b;
+         console.log(c);
+         document.getElementById('c').innerHTML=c
+         }
+
+         function myfunctio(){
+         let a= parseFloat( document.getElementById('a').value)
+         console.log(a);
+         let b= parseFloat(document.getElementById('b').value)
+         console.log(b);
+         let c=a/b;
+         console.log(c);
+         document.getElementById('c').innerHTML=c
+         }
+
+
+
+
+    </script>
+    
+</body>
+</html>
